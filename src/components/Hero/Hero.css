@@ -1,0 +1,91 @@
+.Header{
+    width:100%;
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:90vh;
+    background: linear-gradient(115deg, #fdfcfb, #e2d1c3);
+}
+.Header-left{
+    padding :0px 100px;
+}
+
+.Header-left >h1{
+   text-align:left;
+   margin:10px;
+   font-size: 4rem;
+   color:#eb6234;;
+   
+}
+.button >button{
+    margin-top:20px;
+    padding:15px 25px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px;
+    border:1px solid white;
+    color:white;
+    margin-left:10px;
+    background: linear-gradient(115deg, #62cff4, #2c67f2);
+}
+    
+
+
+.Header-left >p{
+    text-align:left;
+    line-height: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header-right img{
+    width:90%;
+}
+@media(max-width:950px)
+{
+    .Header{
+        display: block;
+        align-items: center;
+        height:100vh;
+       padding-top:4%;
+    }
+    .Header-left h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .Header-left p{
+        text-align: center;
+        line-height: 50px;
+    }
+    .button >button{
+        margin-left:45%;
+        margin-top:00px;
+    }
+   .Header-left{
+     padding-top:50px;
+     padding-left:20px;
+    }
+    .header-right{
+        display: none;
+    }
+}
+@media(max-width:450px)
+{
+    .Header{
+        padding-top: 30px;
+    }
+
+    .Header-left >h1{
+       font-size:2rem;
+       text-align: center;
+       /* line-height: 20px; */
+    }
+    .Header-left >p{
+       font-size: 1rem;
+       line-height:20px;
+       text-align: center;
+     }
+     .button >button{
+        margin-left:35%;
+     }
+}

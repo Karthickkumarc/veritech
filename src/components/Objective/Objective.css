@@ -1,0 +1,61 @@
+
+.objective h1{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:0px;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color:#eb6234;;
+}
+.objective hr{
+    width:10%;
+    border:none;
+    border-radius:10px;
+    height:5px;
+    background-color: #c7c7c7;
+}
+.objective{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+   
+}
+.objective-flex{
+  width:80%;
+  height:100%;
+  display: flex;;
+  flex:1;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(115deg, #fdfcfb, #e2d1c3);
+}
+
+.objective-left img{
+    width:100%;
+    transition: 0.5s;
+}
+.objective-left>img:hover{
+    scale:1.06
+}
+
+.objective-right p{
+     
+         text-align: center;   
+         font-size: 1.5rem;
+         margin:50px;
+}
+@media(max-width:900px)
+{
+    .objective-flex{
+        display: block;
+    }
+    .objective-left > img{
+        width:100%
+    }
+    .objective-right p{
+        text-align: left;
+    }
+}
